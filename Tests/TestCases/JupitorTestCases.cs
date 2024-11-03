@@ -28,9 +28,9 @@ namespace Jupitor_Toys.Tests.TestCases
             Assert.AreEqual("Message is required", GetTextFromWebElement(driver, contactPage.MessageRequiredError));
 
             /*Fill in all mandatory fields and submit form*/
-            string firstName = "Rahul";
-            string email = "Rahul@gmail.com";
-            string message = "Rahul submitting form";
+            string firstName = "Satya";
+            string email = "Satya@gmail.com";
+            string message = "Satya submitting form";
             contactPage.FillAllMandatoryFeilds(firstName, email, message);
 
             int newCount = contactPage.ErrorList();
@@ -44,9 +44,9 @@ namespace Jupitor_Toys.Tests.TestCases
             contactPage = homePage.NavigateToContactPage();
 
             /*Fill in all mandatory fields and submit form*/
-            string firstName = "Rahul";
-            string email = "Rahul@gmail.com";
-            string message = "Rahul submitting form";
+            string firstName = "Satya";
+            string email = "Satya@gmail.com";
+            string message = "Satya submitting form";
             contactPage.FillAllMandatoryFeilds(firstName, email, message);
             contactPage.ClickSubmitButton();
 
@@ -59,8 +59,8 @@ namespace Jupitor_Toys.Tests.TestCases
             homePage = new HomePage();
             contactPage = homePage.NavigateToContactPage();
 
-            string invalidEmail1 = "Rahul";
-            string invalidEmail2 = "Rahul@gmail";
+            string invalidEmail1 = "Satya";
+            string invalidEmail2 = "Satya@gmail";
             string invalidEmail3 = "asas1213@aaasa.comsa";
             string invalidEmail4 = "asg343@.com";
 
